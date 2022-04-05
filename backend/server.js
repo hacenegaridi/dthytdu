@@ -1,3 +1,5 @@
+// pour protéger les informations de connexion vers la BDD MongoDB
+require("dotenv").config();
 
 const http = require("http");
 const app = require("./app");
@@ -49,3 +51,4 @@ server.on("listening", () => {
 });
 
 server.listen(port);
+
