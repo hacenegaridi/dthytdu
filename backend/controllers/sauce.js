@@ -21,8 +21,7 @@ exports.createSauce = (req, res, next) => {
       likes: 0, // départ des likes à 0
       dislikes: 0, // départ des dilikes à 0
     });
-    sauce
-      .save() // sauvegarder la sauce dans la BDD
+    sauce.save() // sauvegarder la sauce dans la BDD
       .then(() => res.status(201).json({message: "La sauce a bien été créée !"}))
       .catch(error => res.status(400).json({error}));
       console.log("voici la bonne sauce créée", sauce);
