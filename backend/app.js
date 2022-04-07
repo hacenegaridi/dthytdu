@@ -46,7 +46,7 @@ mongoose.connect('mongodb+srv://Hacene:0tIiZ8QrqaiDkEZI@cluster0.pbk5g.mongodb.n
   
   // je protège l'appli de certaines vulnerabilités en protégeant les en-têtes
 
-  app.use(helmet())
+  app.use(helmet());
 
   
   // je nettoie les données user pour éviter des injections dans la BDD
