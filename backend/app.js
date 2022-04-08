@@ -38,10 +38,7 @@ mongoose.connect('mongodb+srv://Hacene:0tIiZ8QrqaiDkEZI@cluster0.pbk5g.mongodb.n
     next(); // passe l'exécution au middleware suivant
   });
   
-  // je récupère le body en front sur l'objet request
-  // je parse le corps de la requête en objet json utilisable
-  // bodyParser est automatiquement intégré dans la dernière version
-  // d'Express, donc inutile de l'installer à part
+ 
   app.use(express.json());
   
   // je protège l'appli de certaines vulnerabilités en protégeant les en-têtes
